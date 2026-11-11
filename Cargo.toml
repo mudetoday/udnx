@@ -1,0 +1,17 @@
+[package]
+name = "udnx"
+version = "0.1.0"
+edition = "2021"
+description = "Third-person primitive character controller with Bevy 0.20, targeting Android and desktop"
+license = "MIT OR Apache-2.0"
+
+[lib]
+name = "udnx"
+crate-type = ["lib", "cdylib"]
+
+[dependencies]
+bevy = { version = "0.20", features = ["android-game-activity"] }
+
+[[bin]]
+name = "udnx"
+path = "src/main.rs"
